@@ -43,7 +43,6 @@ span {font-weight: 600;}
 .title {width:30rem; margin: auto;}
 
 @media screen and (max-width: 1150px) {
-    body {margin: 5%;}
     .container {
         grid-template-areas: 
         "left top"
@@ -53,7 +52,7 @@ span {font-weight: 600;}
 }
 @media screen and (max-width: 796px) {
     .title {width: auto;}
-    .title p {padding: 0 15%;}
+    .title p {padding: 0 5%;}
     .container {
         grid-template-areas: 
         "left"
