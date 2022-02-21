@@ -1,0 +1,64 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+    text-align: center;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+img {float: right;}
+h1, h2 {color: hsl(234, 12%, 34%);}
+h1 {font-weight: 200;}
+h2{
+    font-weight: 500;
+    margin-top: 0;
+}
+p {color: hsl(229, 6%, 66%);}
+span {font-weight: 600;}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(212, 86%, 64%); }
+.container {
+    display: grid;
+    grid-template-areas: 
+    ". . top top . ."
+    "left left top top right right"
+    "left left bottom bottom right right"
+    ". . bottom bottom . .";
+    justify-content: center;
+}
+.container div {
+    width: 18rem;
+    margin: 1rem;
+    text-align: left;
+    padding: 1rem 2rem 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 1px hsl(0, 0%, 77%);
+}
+.container p {font-size: 14px;}
+.left {grid-area: left; border-top: solid 4px hsl(180, 62%, 55%);}
+.top {grid-area: top; border-top: solid 4px hsl(0, 78%, 62%);}
+.bottom {grid-area: bottom; border-top: solid 4px hsl(34, 97%, 64%);}
+.right {grid-area: right; border-top: solid 4px hsl(212, 86%, 64%);}
+.title {width:30rem; margin: auto;}
+
+@media screen and (max-width: 1150px) {
+    body {margin: 5%;}
+    .container {
+        grid-template-areas: 
+        "left top"
+        "bottom right";
+    }
+    .title {padding-bottom: 3rem;}
+}
+@media screen and (max-width: 796px) {
+    .title {width: auto;}
+    .title p {padding: 0 15%;}
+    .container {
+        grid-template-areas: 
+        "left"
+        "top"
+        "bottom"
+        "right";
+    }
+}
